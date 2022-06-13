@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather API</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="./scripts/main.js" type="module"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-container">
+			<h1>Weather Application</h1>
+			<p>Below you'll find 2 sections. The first is an area for you to select a location via search.
+				The second is the location based on your browsers location settings, if you allow access.
+			</p>
+		</div>
+		<div class="manual-container weather-container">
+			<div class="weather-header">
+				<h3 class="location"></h3>
+
+				<form name="weather-search">
+					<input type="text" name="location-search" placeholder="Please search for a city">
+					<button class="submit">Get the weather</button>
+				</form>
+			</div>
+			<div class="weather-information">
+				<div class="weather-display">
+					<h4 class="current-temp-header">Temp</h4>
+					<p class="current-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="temp-min-header">Temp Min</h4>
+					<p class="min-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="temp-max-header">Temp Max</h4>
+					<p class="max-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="weather-summary-header">Summary</h4>
+					<p class="weather-summary"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="weather-container hidden">
+			<div class="user-weather-header">
+				<h3 class="user-location"></h3>
+			</div>
+			<div class="weather-information">
+				<div class="weather-display">
+					<h4 class="current-temp-header">Temp</h4>
+					<p class="user-current-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="temp-min-header">Temp Min</h4>
+					<p class="user-min-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="temp-max-header">Temp Max</h4>
+					<p class="user-max-temp"></p>
+				</div>
+
+				<div class="weather-display">
+					<h4 class="weather-summary-header">Summary</h4>
+					<p class="user-weather-summary"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

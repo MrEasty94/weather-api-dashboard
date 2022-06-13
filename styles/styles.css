@@ -1,0 +1,50 @@
+body {
+	text-align: center;
+	background-color: grey;
+	font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.weather-container {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: white;
+	padding: 2rem;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.weather-information {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.weather-display {
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media screen and (min-width: 600px){
+	.weather-information {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.weather-header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+
